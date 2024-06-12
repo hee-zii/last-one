@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <style>
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #010a13;
+            width: 100%;
+            height: 100%;
+           }
+      .box{
+        background-repeat: no-repeat;
+        background-color: #010a13;
+        background-image: url(box.png);
+        background-size: 300px;
+        width: 300px;
+        min-height: 300px;
+        margin: auto;
+        margin-top: 35px;
+        position: relative;
+        animation-name: move;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+      
+    }
+    /* @keyframes rule */
+    @keyframes move {
+      /* keyframe */
+   0%{
+    transform: translateY(0);
+   }
+   50%{
+    transform: translateY(7px);
+   }
+   100%{
+    transform: translateY(0);
+   }
+      }
+      .button{
+        width: 100%;
+        height: 100px;
+        background-color: #010a13;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .button1:hover {
+        box-shadow: 0 0 5px 5px rgba(218, 145, 53, 0.21);
+      }
+      .header{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 200px;
+      }
+      .title{
+        width: auto;
+        text-align: center;
+        font-size: 1.1rem;
+    font-weight: bold;
+    color: #ebe5d7;
+    margin: auto;
+    margin-top: 190px;
+      }
+      .title2{
+        font-size: 0.8rem;
+        text-align: center;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #919090;
+    margin: auto;
+      }
+    </style>
+</head>
+<body>
+
+  <dic class="header">
+    <div class="title">
+      <p>챔피언 캡슐</p>
+    </div>
+    <div class="title2">
+      <p>챔피언 파편이 들어있는 캡슐입니다. 열쇠는 필요 없으며 레벨업 시 획득합니다.</p>
+    </div>
+    <div class="box">
+    </div>
+   <div class="button">
+       <button type="button" class="btn btn-loot button1" onclick="location.href='../index.html';">열기</button>
+   </div>
+   <div class="title2">
+    <p>설명 : 게임 속 화면을 html에서 css를 이용하여 카피해보았습니다. </p>
+  </div>
+  </dic>
+  
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        /* CSS 스타일링 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bfff;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact-button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #00bfff;
+        }
+
+        /* Add specific style for the image to remove space above */
+        img {
+            display: block;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="졸라맨.png" alt="졸라맨" width="300" height="100">
+    <header>
+        <h1>www.heeji.com</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="./고블린대체.html">고블린게임</a>
+                        <a href="../연습/index.htm">연습</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">sns</a>
+                    <div class="dropdown-content">
+                        <a href="https://www.instagram.com/_.heezii?igsh=MjNwZHgwdWwwZXFu&utm_source=qr">인스타그램</a>
+                        <a href="#">블로그</a>
+                        <a href="#">유튜브</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Profile</h1>
+        <div class="profile">
+            <img src="고양이.png" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <h2>이름: 김희지</h2>
+                <p>연락처: 010-9940-7356</p>
+                <p>생일: 2004.10.08</p>
+                <p>학력: 청운대학교 컴퓨터공학과 재학</p>
+                <p>취미: 음악감상, 드로잉, 게임, 독서 등</p>
+            </div>
+            <button type="button"class="contact-button" onclick="location.href='뚜뚜.html';"> 연락하기 </button>
+        </div>
+    </div>
+</body>
+</html>
