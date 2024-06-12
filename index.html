@@ -14,7 +14,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background-color: #f0f0f0;
       color: #333;
     }
@@ -40,6 +40,7 @@
       padding: 0;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     nav ul li {
@@ -106,10 +107,67 @@
       font-size: 18px;
       line-height: 1.6;
     }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 900px;
+      display: block;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+
+      .content h2 {
+        font-size: 24px;
+      }
+
+      .content p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      nav ul li a {
+        font-size: 14px;
+      }
+
+      .content h2 {
+        font-size: 20px;
+      }
+
+      .content p {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
-    <img src="css/hello.png" alt="" width="900" height="360">
+  <img src="css/hello.png" alt="" width="900" height="360">
   <header>
     <h1>www.heeji.com</h1>
     <nav>
